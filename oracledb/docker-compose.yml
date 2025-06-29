@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  oracle-db:
+    image: gvenzl/oracle-xe
+    container_name: oracle-db
+    environment:
+      ORACLE_PASSWORD: "TuContraseña123*"
+    ports:
+      - "1521:1521"
+      - "8080:8080"
+    volumes:
+      - oracle-volume:/opt/oracle/oradata
+
+volumes:
+  oracle-volume:
