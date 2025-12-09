@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   oracle-db:
     image: gvenzl/oracle-xe
@@ -14,3 +12,5 @@ services:
 
 volumes:
   oracle-volume:
+
+# El Database por defecto es xepdb1
